@@ -1,0 +1,36 @@
+<!--pages/home/home.wxml-->
+<!-- 引入模版 -->
+<import src='../../asserts/commen/mySwiperTpl/index' />
+
+<!-- <block>
+  <button bindtap="upLoad" wx:if="{{chooseShow}}">点击上传图片</button>
+</block> -->
+<!-- 使用模版 -->
+<template is="mySwiperTpl" data="{{swiperImg}}"></template>
+
+<!-- 搜索 -->
+<view class="top">
+  <image></image>
+  <view class="search">
+  <input type="text" placeholder="请输入关键字"></input>
+  <view></view>
+  </view>
+</view>
+
+<!-- 分类 -->
+
+<view class="kind">
+  <view class="active" wx:for='{{tabList}}' wx:key = 'index'>
+  {{item}}</view>
+  <!-- <view class="active">电脑</view>
+  <view class="active">家居用品</view> -->
+</view>
+
+<!--商品列表-->
+<view class="goods-lists">
+  <view class="goods-item">
+    <image src=""></image>
+    <view>简介</view>
+    <view>价格</view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--asserts/commen/mySwiperTpl/index.wxml-->
+<!-- 创建模版 -->
+<template name="mySwiperTpl">
+  <swiper indicator-dots='true' autoplay='true' circular='true'>
+    <swiper-item wx:for='{{swiperImg}}' wx:key ='index'>
+      <!-- <navigator: 页面组件跳转 （跳转非tabBar页面）> -->
+      <navigator url="{{item.url}}">
+        <image src="{{item.img}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</template>

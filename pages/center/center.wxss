@@ -1,0 +1,6 @@
+/* pages/center/center.wxss */
+.my-title{
+  color: red;
+  /* 1px = 2rpx*/
+  font-size: 48rpx;
+}

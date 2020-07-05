@@ -1,0 +1,85 @@
+
+/*搜索*/
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+}
+.top image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.top .search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* pages/home/home.wxss */
+swiper swiper-item image {
+  width: 100%;
+  height: 400rpx;
+}
+/* swiper  {
+  height: 300px;
+} */
+.goods-lists{
+  padding: 0 10rpx;
+  margin-bottom: 120rpx;
+}
+
+.goods-lists .goods-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  position: relative;
+  /* padding: 10rpx 0;
+  border-bottom: 1px solid #ccc; */
+}
+
+/* .goods-lists .goods-item::after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  position: absolute;
+  bottom: -6rpx;
+  left: 0;
+} */
+
+.goods-lists .goods-item image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+
+/* 分类样式  tab切换*/
+.kind{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10rpx 20rpx;
+}
+
+.kind view{
+  position: relative;
+}
+.kind .active {
+  color: #41D4E1;
+
+}
+.kind .active::after{
+  content: '';
+  display: block;
+  width: 40rpx;
+  height: 6rpx;
+  background: #41D4E1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

@@ -1,0 +1,3 @@
+<!--pages/center/index.wxml-->
+<text>hello mainapp</text>
+<view class="my-title">{{text}}</view>
